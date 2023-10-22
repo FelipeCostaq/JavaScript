@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatações</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,7 +17,9 @@
 
     <script>
         var nome = window.prompt("Qual é seu nome?")
-        document.write('Seu nome tem '+ nome.length + ' letras')
+        document.write(`O nome <strong>${nome}</strong> tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em mainsculo é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minisculo é ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
