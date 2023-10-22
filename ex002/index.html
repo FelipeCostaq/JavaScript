@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script</title>
+    <style>
+        body, html{
+            background-color: lightgreen;
+
+        }
+        h1, p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+
+        main{
+            background-color: rgb(98, 120, 127);
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.423);
+            border-radius: 10px;
+        }
+        article{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Coletando Dados</h1>
+        </article>
+    </main>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+
+        window.prompt('Qual seu nome?')
+        window.alert('Olá,', nome)
+
+        
+    </script>
+</body>
+</html>
