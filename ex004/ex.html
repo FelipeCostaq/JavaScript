@@ -23,9 +23,14 @@
       var n2 = Number(window.prompt(`Nota segundo bimestre`))
       var n3 = Number(window.prompt(`Nota terceiro bimestre`))
 
-        s = (n1 + n2 + n3) / 3
-        
-        document.write(`<h2>Sua nota do ano foi de ${s}</h2> `)
+      s = (n1 + n2 + n3) / 3
+        if (s >= 5 ){
+            document.write(`Aprovado sua nota do primeiro bimestre foi ${n1}, do segundo foi ${n2} e do terceiro foi ${n3}. Sua nota no final do ano foi ${s}`)
+        }
+        else{
+            document.write(`Reprovado sua nota do primeiro bimestre foi ${n1}, do segundo foi ${n2} e do terceiro foi ${n3}. Sua nota no final do ano foi ${s}`)
+        }
+      
     </script>
 </body>
 </html>
