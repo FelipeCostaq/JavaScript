@@ -31,6 +31,10 @@
 
     <script>
         var a = document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener ('mouseleave', sair)
+
 
         function clicar() {
             a.innerText = `Clicou!`
@@ -48,7 +52,7 @@
         function sair(){
             a.innerText = `Saiu!`
             a.style.background = 'gray'
-            a.style.color = "black"
+            a.style.color = "white"
 
         }
 
