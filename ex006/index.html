@@ -19,11 +19,13 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.46);
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" onmouseup="up()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" >
         Coloque o mouse encima
     </div>
 
@@ -32,15 +34,21 @@
 
         function clicar() {
             a.innerText = `Clicou!`
+            a.style.background = 'black'
+            a.style.color = "white"
         }
 
         function entrar(){
             a.innerText = `Entrou!`
+            a.style.background = 'lightgreen'
+            a.style.color = "black"
             
         }
 
         function sair(){
             a.innerText = `Saiu!`
+            a.style.background = 'gray'
+            a.style.color = "black"
 
         }
 
