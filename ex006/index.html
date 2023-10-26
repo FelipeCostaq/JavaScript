@@ -10,22 +10,42 @@
         }
         div#area{
             background-color: lightblue;
-            height: 200px;
-            width: 200px;
+            height: 280px;
+            width: 350px;
             text-align: center;
-            line-height: 190px;
+            line-height: 250px;
             font-size: 20pt;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div id="area">
-        Intereja...
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" onmouseup="up()">
+        Coloque o mouse encima
     </div>
 
     <script>
-        
-    </script>
+        var a = document.getElementById('area')
+
+        function clicar() {
+            a.innerText = `Clicou!`
+        }
+
+        function entrar(){
+            a.innerText = `Entrou!`
+            
+        }
+
+        function sair(){
+            a.innerText = `Saiu!`
+
+        }
+
+
+    </script>   
     
 </body>
 </html>
