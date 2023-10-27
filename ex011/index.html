@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Brasileiro</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#form{
+            text-align: center;
+        }
+        div#res{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>Verificador de Nacionalidade</h1>
+        <input type="text" name="pais" id="pais" style="text-transform: uppercase;">
+        <input type="button" value="Verificar" onclick="verificar()"> 
+    </div>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+        var txtpais = window.document.getElementById('pais')
+        var res = window.document.getElementById('res')
+        var pais = String(txtpais.value)
+  
+        if (txtpais.value == 'BRASIL') {
+            res.innerHTML = `<p>Você nasceu no ${pais}, então é brasileiro </p>`
+        } else {
+            res.innerHTML = `<p>Você nasceu na(o) ${pais}, então é estrangeiro </p>`
+        }
+
+        
+        }
+    </script>
+    
+</body>
+</html>
