@@ -6,6 +6,9 @@ function verificar(){
     if (fano.value.length == 0 || fano.value > ano){
         window.alert('{ERROR} Verifique os dados e tente novamente!')
     }
+    s = (fano - ano)
+
+    res.innerHTML = `Tem ${s} de idade`
 
     
 }
