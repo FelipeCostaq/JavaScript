@@ -28,5 +28,11 @@ img#imagens{
     border-radius: 50%;
 }
 
-input
+input#txtano{
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(230, 61, 61);
+    color: black;
+}
 
