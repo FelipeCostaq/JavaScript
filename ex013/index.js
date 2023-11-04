@@ -3,5 +3,4 @@ while (c < 6){
     console.log('Olá,Mundo!')
     c++
 
-
 }
