@@ -8,4 +8,4 @@ function contar(){
     if (ini.value.lenght == 0 || fi.value.lenght == 0 || pas.value.lenght == 0  ){
         alert('ERRO! Faltam Dados.')
     }
-}
+}xxxx
