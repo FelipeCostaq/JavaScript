@@ -12,20 +12,35 @@
     </header>
     <section id="cont">
         <div>
-            <label for="nume">Número de 1 a 100: </label><input type="number" name="nume" id="nume">
-            <input type="button" value="Adicionar" onclick="add()">
-            <br><select name="listanum" id="listanum" style="width: 250px; height: 250px; border: 1px solid black;">
-
-            </select >
+            <label for="nume">Número de 1 a 100: </label><input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br>
+            <select name="flista" id="flista" style="width: 150px; height: 150px; border: 1px solid black;">
+            </select > <br>
+            <input type="button" value="Finalizar" onclick="">
         </div>
         <div id="res">
             
         </div> 
     </section>
 
-    <script src="script.js">
+    <script>
+        var num = document.getElementById('nume')
+        var sel = document.getElementById('listanum')
+        function add(){
+        if(num.value.length == 0){
+            alert('Coloque um número')
+        }else{
+            var nu = Number(num.value)
+            var option = document.createElement('option');
+            sel.add(option);
+            option.value = nu;
+            option.text = nu;
+            sel.add(option);
+            num.value = ``
+}
+}
     </script>
-
 
     
 </body>
