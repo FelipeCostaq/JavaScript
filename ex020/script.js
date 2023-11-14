@@ -18,7 +18,7 @@ function inLista(n,l){
 }
 function adicionar(){
     if(isNumero(num.value) && !inLista(num.value, valores)){
-
+        alert('tudo celto')
     }else{
         alert('Valor invalido ou ja tem na lista')
     }
