@@ -10,7 +10,7 @@ header{
     
 }
 section#cont{
-    height: 500px;
+    height: 550px;
     width: 500px;
     background-color: white;
     border-radius: 10px;
@@ -35,4 +35,14 @@ input#nume{
 select{
     margin-top: 50px;
 }
+div#form{
+    margin-top: 150px;
+    
+}
+div#form input{
+    border: 1px solid black;
+}
 
+select#flista{
+    width: 300px;
+}
