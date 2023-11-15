@@ -1,25 +1,21 @@
-let res = document.getElementById('res')
+res = document.getElementById('res')
 let valores = []
 
-function isNumero(n){
-    if(Number(n) >= 1 && Number(n) <= 100){
-        return true
-    } else {
-        return false
-    }
+function isNumero(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n) && Number(n) >= 1 && Number(n) <= 100;
 }
 
-function inLista(n,l){
-    if (l.indexOf(Number(n)) !== -1){
-        return true
-    } else {
-        return false
-    }
+function inLista(n, l) {
+    return l.indexOf(Number(n)) !== -1;
 }
-function adicionar(){
-    if(isNumero(num.value) && !inLista(num.value, valores)){
-        alert('tudo celto')
-    }else{
-        alert('Valor invalido ou ja tem na lista')
+
+function adicionar() {
+    let num = document.getElementById('fnum');
+    
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        valores.push(Number(num.value));
+        alert('Valor adicionado com sucesso');
+    } else {
+        alert('Valor inválido ou já está na lista');
     }
 }
